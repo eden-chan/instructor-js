@@ -66,7 +66,7 @@ const createQueryPlan = async (question: string): Promise<QueryPlan | undefined>
       },
     ],
     model: "gpt-4-1106-preview",
-    response_model: { schema: QueryPlanSchema },
+    response_model: { schema: QueryPlanSchema, name: "QueryPlan" },
     max_tokens: 1000,
     temperature: 0.0,
     max_retries: 2,
